@@ -3,7 +3,7 @@ import { IsOptional, IsString, IsUrl } from 'class-validator';
 export class EditBookmarkDto {
   @IsString()
   @IsOptional()
-  title: string;
+  title?: string;
 
   @IsString()
   @IsOptional()
@@ -11,5 +11,5 @@ export class EditBookmarkDto {
 
   @IsUrl()
   @IsOptional()
-  link: string;
+  link?: string;
 }
